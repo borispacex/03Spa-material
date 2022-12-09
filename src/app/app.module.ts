@@ -27,6 +27,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { DialogModule } from '@angular/cdk/dialog';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+import { EmpleadoComponent } from './components/empleado/empleado.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     DashboardComponent,
     AddressFormComponent,
     TableComponent,
-    DialogAnimationsExampleDialog
+    DialogAnimationsExampleDialog,
+    EmpleadoComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatPaginatorModule,
     MatSortModule,
     DialogModule,
-    MatDialogModule
+    MatDialogModule,
+
+
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
